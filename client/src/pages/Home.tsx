@@ -117,9 +117,10 @@ function LifePhasesTimeline() {
                   <span
                     className={`text-xs font-bold transition-all duration-300 ${
                       currentPhase === index
-                        ? `text-${p.accentColor}`
+                        ? ""
                         : "text-muted-foreground group-hover:text-foreground"
                     }`}
+                    style={currentPhase === index ? { color: p.color } : undefined}
                   >
                     {p.title}
                   </span>
